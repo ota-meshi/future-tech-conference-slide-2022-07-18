@@ -15,11 +15,11 @@
     }
 } */
 .slidev-layout {
-    a {
-        color:#00a2ff;
-    }
+  a {
+    color: #00a2ff;
+  }
 }
 
 #slide-content {
-    border: solid 1px #ddd;
+  border: solid 1px #ddd;
 }

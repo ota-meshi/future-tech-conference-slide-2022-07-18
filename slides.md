@@ -1,24 +1,17 @@
 ---
-# try also 'default' to start simple
 theme: default
-# random image from a curated Unsplash collection by Anthony
-# like them? see https://unsplash.com/collections/94734566/slidev
 background: https://source.unsplash.com/collection/94734566/1920x1080
-# apply any windi css classes to the current slide
-class: 'text-center'
-# https://sli.dev/custom/highlighters.html
+class: text-center
 highlighter: shiki
-# show line numbers in code blocks
 lineNumbers: false
-# some information about the slides, markdown enabled
 info: |
   ## Slidev Starter Template
   Presentation slides for developers.
 
   Learn more at [Sli.dev](https://sli.dev)
-# persist drawings in exports and build
 drawings:
   persist: false
+title: Vue3 最新構文<br> &lt;script setup&gt; の紹介
 ---
 
 # Vue3 最新構文<br> &lt;script setup&gt; の紹介
@@ -54,7 +47,10 @@ h1, a {
   background: -webkit-linear-gradient(315deg,#42d392 25%,#647eff);
   background-clip: text;
   -webkit-background-clip: text;
+  -moz-background-clip: text;
+  text-fill-color: transparent;
   -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
 }
 h1 {
   font-weight: 700;
@@ -70,9 +66,13 @@ h1 {
 }
 </style>
 
+<!-- prettier-ignore-start -->
+
 ---
 layout: two-cols
 ---
+
+<!-- prettier-ignore-end -->
 
 # 自己紹介
 
@@ -92,7 +92,7 @@ layout: two-cols
 <br>
 
 - 太田 洋介
-  - 年齢: アラフォー　📍: 神奈川県
+  - 年齢: アラフォー　 📍: 神奈川県
 - アカウント
   - GitHub: https://github.com/ota-meshi
   - npm: https://www.npmjs.com/~ota-meshi
@@ -103,10 +103,10 @@ layout: two-cols
 
 - 所属
   - [フューチャー株式会社](https://www.future.co.jp/) 社員 (2015/06 - )
-  - [Vue.js](https://vuejs.org/about/team.html) eslint-plugin-vueメンテナー  
+  - [Vue.js](https://vuejs.org/about/team.html) eslint-plugin-vue メンテナー  
     (eslint-plugin-vue 2018/08 - , Vue 2019/07 - )
-  - [Stylelint](https://github.com/stylelint) Ownersチーム (2020/09 - )
-  - [Intlify](https://github.com/intlify) eslint-plugin-vue-i18n担当 (2020/07 - )
+  - [Stylelint](https://github.com/stylelint) Owners チーム (2020/09 - )
+  - [Intlify](https://github.com/intlify) eslint-plugin-vue-i18n 担当 (2020/07 - )
 
 <style>
 .grid-cols-2 {
@@ -136,6 +136,7 @@ layout: two-cols
   height: 80px;
 }
 </style>
+
 ---
 
 # What is Slidev?
@@ -172,7 +173,6 @@ h1 {
 }
 </style>
 
-
 ---
 
 # Navigation
@@ -181,25 +181,31 @@ Hover on the bottom-left corner to see the navigation's controls panel, [learn m
 
 ### Keyboard Shortcuts
 
-|     |     |
-| --- | --- |
-| <kbd>right</kbd> / <kbd>space</kbd>| next animation or slide |
-| <kbd>left</kbd>  / <kbd>shift</kbd><kbd>space</kbd> | previous animation or slide |
-| <kbd>up</kbd> | previous slide |
-| <kbd>down</kbd> | next slide |
+|                                                    |                             |
+| -------------------------------------------------- | --------------------------- |
+| <kbd>right</kbd> / <kbd>space</kbd>                | next animation or slide     |
+| <kbd>left</kbd> / <kbd>shift</kbd><kbd>space</kbd> | previous animation or slide |
+| <kbd>up</kbd>                                      | previous slide              |
+| <kbd>down</kbd>                                    | next slide                  |
 
 <!-- https://sli.dev/guide/animations.html#click-animations -->
+
 <img
   v-click
   class="absolute -bottom-9 -left-7 w-80 opacity-50"
   src="https://sli.dev/assets/arrow-bottom-left.svg"
 />
+
 <p v-after class="absolute bottom-23 left-45 opacity-30 transform -rotate-10">Here!</p>
+
+<!-- prettier-ignore-start -->
 
 ---
 layout: image-right
 image: https://source.unsplash.com/collection/94734566/1920x1080
 ---
+
+<!-- prettier-ignore-end -->
 
 # Code
 
@@ -207,16 +213,16 @@ Use code snippets and get the highlighting directly![^1]
 
 ```ts {all|2|1-6|9|all}
 interface User {
-  id: number
-  firstName: string
-  lastName: string
-  role: string
+  id: number;
+  firstName: string;
+  lastName: string;
+  role: string;
 }
 
 function updateUser(id: number, update: User) {
-  const user = getUser(id)
-  const newUser = { ...user, ...update }
-  saveUser(id, newUser)
+  const user = getUser(id);
+  const newUser = { ...user, ...update };
+  saveUser(id, newUser);
 }
 ```
 
@@ -268,10 +274,13 @@ Check out [the guides](https://sli.dev/builtin/components.html) for more.
 </div>
 </div>
 
+<!-- prettier-ignore-start -->
 
 ---
 class: px-20
 ---
+
+<!-- prettier-ignore-end -->
 
 # Themes
 
@@ -300,21 +309,20 @@ theme: seriph
 Read more about [How to use a theme](https://sli.dev/themes/use.html) and
 check out the [Awesome Themes Gallery](https://sli.dev/themes/gallery.html).
 
+<!-- prettier-ignore-start -->
+
 ---
 preload: false
 ---
+
+<!-- prettier-ignore-end -->
 
 # Animations
 
 Animations are powered by [@vueuse/motion](https://motion.vueuse.org/).
 
 ```html
-<div
-  v-motion
-  :initial="{ x: -80 }"
-  :enter="{ x: 0 }">
-  Slidev
-</div>
+<div v-motion :initial="{ x: -80 }" :enter="{ x: 0 }">Slidev</div>
 ```
 
 <div class="w-60 relative mt-6">
@@ -384,6 +392,8 @@ LaTeX is supported out-of-box powered by [KaTeX](https://katex.org/).
 
 <br>
 
+<!-- prettier-ignore-start -->
+
 Inline $\sqrt{3x-1}+(1+x)^2$
 
 Block
@@ -399,6 +409,8 @@ $$
 
 \end{array}
 $$
+
+<!-- prettier-ignore-end -->
 
 <br>
 
@@ -464,12 +476,49 @@ database "MySql" {
 
 [Learn More](https://sli.dev/guide/syntax.html#diagrams)
 
+<!-- prettier-ignore-start -->
 
 ---
 layout: center
 class: text-center
 ---
 
-# Learn More
+<!-- prettier-ignore-end -->
 
-[Documentations](https://sli.dev) · [GitHub](https://github.com/slidevjs/slidev) · [Showcases](https://sli.dev/showcases.html)
+# Thank you for your attention
+
+<div class="ribbon">
+
+Follow me!!  
+GitHub: https://github.com/ota-meshi  
+Twitter: https://twitter.com/omoteota  
+Qiita: https://qiita.com/ota-meshi
+
+</div>
+
+<style>
+  h1,
+  a {
+    background: -webkit-linear-gradient(315deg, #42d392 25%, #647eff);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    text-fill-color: transparent;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+  }
+  .slidev-layout h1 {
+    font-weight: 700;
+    font-size: 3.5rem;
+    line-height: 4.5rem;
+  }
+
+  .ribbon {
+    position: absolute;
+    bottom: 50px;
+    right: -300px;
+    transform: rotate(-25deg);
+    background-color: #ddd5;
+    width: 100%;
+  }
+</style>

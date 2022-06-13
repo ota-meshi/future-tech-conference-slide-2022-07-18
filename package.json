@@ -4,11 +4,15 @@
   "scripts": {
     "build": "slidev build",
     "dev": "slidev --open",
-    "export": "slidev export"
+    "export": "slidev export",
+    "format": "prettier . --write"
   },
   "dependencies": {
     "@slidev/cli": "^0.33.0",
     "@slidev/theme-default": "*",
     "@slidev/theme-seriph": "*"
+  },
+  "devDependencies": {
+    "prettier": "^2.6.2"
   }
 }
