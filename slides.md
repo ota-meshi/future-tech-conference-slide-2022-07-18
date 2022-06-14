@@ -12,6 +12,7 @@ info: |
 drawings:
   persist: false
 title: Vue3 最新構文<br> &lt;script setup&gt; の紹介
+hideInToc: true
 ---
 
 # Vue3 最新構文<br> &lt;script setup&gt; の紹介
@@ -69,75 +70,18 @@ h1 {
 <!-- prettier-ignore-start -->
 
 ---
-layout: two-cols
+src: ./src/00-intro.md
+---
+
+---
+src: ./src/01-script-setup.md
+---
+
+---
+src: ./src/02-syntaxes.md
 ---
 
 <!-- prettier-ignore-end -->
-
-# 自己紹介
-
-<div class="avatars">
-  <img class="avatar" src="https://github.com/ota-meshi.png" alt="ota-meshi">
-  <div class="org-avatars">
-    <img src="https://github.com/future-architect.png" alt="Future Corp">
-    <img src="https://github.com/vuejs.png" alt="Vue.js">
-    <img src="https://github.com/stylelint.png" alt="Stylelint">
-    <img src="https://github.com/intlify.png" alt="Intlify">
-  </div>
-</div>
-
-::right::
-
-<br>
-<br>
-
-- 太田 洋介
-  - 年齢: アラフォー　 📍: 神奈川県
-- アカウント
-  - GitHub: https://github.com/ota-meshi
-  - npm: https://www.npmjs.com/~ota-meshi
-  - Twitter: https://twitter.com/omoteota
-  - Qiita: https://qiita.com/ota-meshi
-
-<br>
-
-- 所属
-  - [フューチャー株式会社](https://www.future.co.jp/) 社員 (2015/06 - )
-  - [Vue.js](https://vuejs.org/about/team.html) eslint-plugin-vue メンテナー  
-    (eslint-plugin-vue 2018/08 - , Vue 2019/07 - )
-  - [Stylelint](https://github.com/stylelint) Owners チーム (2020/09 - )
-  - [Intlify](https://github.com/intlify) eslint-plugin-vue-i18n 担当 (2020/07 - )
-
-<style>
-.grid-cols-2 {
-  grid-template-columns: 0.7fr 1.3fr;
-}
-.avatars {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.avatar {
-  border-radius: 50%;
-  overflow: hidden;
-  width: 200px;
-  height: 200px;
-}
-.org-avatars {
-  padding: 32px;
-  display: grid;
-  grid-template-columns: 80px 80px;
-  gap: 8px;
-}
-.org-avatars img {
-  border-radius: 16px;
-  overflow: hidden;
-  width: 80px;
-  height: 80px;
-}
-</style>
-
----
 
 # What is Slidev?
 
@@ -480,7 +424,7 @@ database "MySql" {
 
 ---
 layout: center
-class: text-center
+class: text-center big-title
 ---
 
 <!-- prettier-ignore-end -->
@@ -489,7 +433,7 @@ class: text-center
 
 <div class="ribbon">
 
-Follow me!!  
+[Support me ❤](https://github.com/sponsors/ota-meshi) or follow me!!  
 GitHub: https://github.com/ota-meshi  
 Twitter: https://twitter.com/omoteota  
 Qiita: https://qiita.com/ota-meshi
@@ -507,18 +451,14 @@ Qiita: https://qiita.com/ota-meshi
     -webkit-text-fill-color: transparent;
     -moz-text-fill-color: transparent;
   }
-  .slidev-layout h1 {
-    font-weight: 700;
-    font-size: 3.5rem;
-    line-height: 4.5rem;
-  }
 
   .ribbon {
     position: absolute;
-    bottom: 50px;
-    right: -300px;
+    bottom: 32px;
+    right: -347px;
     transform: rotate(-25deg);
     background-color: #ddd5;
     width: 100%;
+    font-size: 1rem;
   }
 </style>
