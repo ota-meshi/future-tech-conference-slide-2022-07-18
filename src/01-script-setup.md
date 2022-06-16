@@ -1,6 +1,7 @@
 ---
 layout: center
 class: text-center big-title
+title: "What is &lt;script setup&gt;?"
 ---
 
 <!-- prettier-ignore-end -->
@@ -11,6 +12,7 @@ class: text-center big-title
 
 ---
 layout: sub-two-cols
+hideInToc: true
 ---
 
 <!-- prettier-ignore-end -->

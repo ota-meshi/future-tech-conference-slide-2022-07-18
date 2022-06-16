@@ -11,6 +11,7 @@ class: text-center big-title
 
 ---
 layout: sub-two-cols
+title: 基本
 ---
 
 <!-- prettier-ignore-end -->
@@ -60,6 +61,7 @@ function handleClick() {
 
 ---
 layout: sub-two-cols
+hideInToc: true
 ---
 
 <!-- prettier-ignore-end -->
@@ -126,6 +128,7 @@ export default {
 
 ---
 layout: sub-two-cols
+title: リアクティブ・コンポーネント
 ---
 
 <!-- prettier-ignore-end -->
@@ -174,6 +177,7 @@ function handleClick() {
 
 ---
 layout: sub-two-cols
+hideInToc: true
 ---
 
 <!-- prettier-ignore-end -->
@@ -256,6 +260,7 @@ export default {
 
 ---
 layout: sub-two-cols
+title: カスタムディレクティブ・非同期
 ---
 
 <!-- prettier-ignore-end -->
@@ -297,6 +302,7 @@ const post = await fetch(`/api/post/1`).then((r) => r.json());
 
 ---
 layout: sub-two-cols
+hideInToc: true
 ---
 
 <!-- prettier-ignore-end -->
@@ -365,6 +371,7 @@ export default {
 
 ---
 layout: sub-two-cols
+title: Prop・カスタムイベント
 ---
 
 <!-- prettier-ignore-end -->
@@ -423,6 +430,7 @@ Props を定義・使用するには `defineProps` というコンパイラマ�
 
 ---
 layout: sub-two-cols
+hideInToc: true
 ---
 
 <!-- prettier-ignore-end -->
@@ -507,6 +515,7 @@ export default {
 
 ---
 layout: sub-two-cols
+title: Prop・カスタムイベント with TypeScript
 ---
 
 <!-- prettier-ignore-end -->
@@ -562,6 +571,7 @@ const emit = defineEmits<{
 
 ---
 layout: sub-two-cols
+hideInToc: true
 ---
 
 <!-- prettier-ignore-end -->
@@ -595,6 +605,7 @@ const emit = defineEmits({
 
 ---
 layout: sub-two-cols
+title: その他
 ---
 
 <!-- prettier-ignore-end -->
@@ -607,3 +618,42 @@ layout: sub-two-cols
   - `export default {}`を定義することで、`inheritAttrs`などのコンポーネントオプションを定義できます
   - `.vue`が`export`する情報を定義できます
   - module が呼び出されたときに一度だけ実行されるスクリプトを書くことができます
+
+<br />
+
+::left::
+
+```vue
+<script setup>
+import { useSlots, useAttrs } from "vue";
+
+const slots = useSlots();
+const attrs = useAttrs();
+// ...
+</script>
+```
+
+::right::
+
+```vue
+<script>
+// module が呼び出されたときに一度だけ実行される
+runSideEffectOnce();
+
+// オプションの定義
+export default {
+  inheritAttrs: false,
+};
+</script>
+
+<script setup>
+// ...
+</script>
+```
+
+<style>
+  .shiki-container {
+    transform: scale(0.8);
+    transform-origin: top left;
+  }
+</style>
