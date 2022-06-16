@@ -13,6 +13,7 @@ drawings:
   persist: false
 title: Vue3 最新構文<br> &lt;script setup&gt; の紹介
 hideInToc: true
+download: true
 ---
 
 # Vue3 最新構文<br> &lt;script setup&gt; の紹介

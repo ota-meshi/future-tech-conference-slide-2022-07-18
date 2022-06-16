@@ -3,6 +3,7 @@
   "private": true,
   "scripts": {
     "build": "slidev build",
+    "build:gh": "slidev build --base /future-tech-conference-slide-2022-07-18/",
     "dev": "slidev --open",
     "export": "slidev export",
     "format": "prettier . --write"
