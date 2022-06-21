@@ -15,6 +15,7 @@ hideInToc: true
     <img src="https://github.com/vuejs.png" alt="Vue.js">
     <img src="https://github.com/stylelint.png" alt="Stylelint">
     <img src="https://github.com/intlify.png" alt="Intlify">
+    <img src="https://github.com/stylus.png" alt="Stylus">
   </div>
 </div>
 
@@ -27,15 +28,13 @@ hideInToc: true
   - npm: https://www.npmjs.com/~ota-meshi
   - Twitter: https://twitter.com/omoteota
   - Qiita: https://qiita.com/ota-meshi
-
-<br>
-
 - 所属
   - [フューチャー株式会社](https://www.future.co.jp/) 社員 (2015/06 - )
   - [Vue.js](https://vuejs.org/about/team.html) eslint-plugin-vue メンテナー  
     (eslint-plugin-vue 2018/08 - , Vue 2019/07 - )
   - [Stylelint](https://github.com/stylelint) Owners チーム (2020/09 - )
   - [Intlify](https://github.com/intlify) eslint-plugin-vue-i18n 担当 (2020/07 - )
+  - [Stylus](https://github.com/stylus) チーム (2022/06 - )
 
 </div>
 </div>
@@ -57,16 +56,22 @@ hideInToc: true
 }
 .org-avatars {
   padding: 32px;
-  display: grid;
-  grid-template-columns: 80px 80px;
+  display: flex;
+  width: calc(80px * 3 + 8px * 2 + 16px);
+  box-sizing: content-box;
   gap: 8px;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
 }
 .org-avatars img {
   border-radius: 16px;
+  border: 0.5px solid #aaa;
   overflow: hidden;
   width: 80px;
   height: 80px;
-  background: #fff2;
+  box-sizing: border-box;
+  background: #fff;
 }
 .sponsor {
   margin-left: 8px;
