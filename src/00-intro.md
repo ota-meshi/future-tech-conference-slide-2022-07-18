@@ -94,4 +94,4 @@ hideInToc: true
 
 # アジェンダ
 
-<Toc columns="2" maxDepth="2" />
+<Toc maxDepth="2" />

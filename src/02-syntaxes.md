@@ -12,6 +12,7 @@ class: text-center big-title
 ---
 layout: sub-two-cols
 title: 基本
+level: 2
 ---
 
 <!-- prettier-ignore-end -->
@@ -129,6 +130,7 @@ export default {
 ---
 layout: sub-two-cols
 title: リアクティブ・コンポーネント
+level: 2
 ---
 
 <!-- prettier-ignore-end -->
@@ -261,6 +263,7 @@ export default {
 ---
 layout: sub-two-cols
 title: カスタムディレクティブ・非同期
+level: 2
 ---
 
 <!-- prettier-ignore-end -->
@@ -372,6 +375,7 @@ export default {
 ---
 layout: sub-two-cols
 title: Prop・カスタムイベント
+level: 2
 ---
 
 <!-- prettier-ignore-end -->
@@ -516,6 +520,7 @@ export default {
 ---
 layout: sub-two-cols
 title: Prop・カスタムイベント with TypeScript
+level: 2
 ---
 
 <!-- prettier-ignore-end -->
@@ -606,6 +611,7 @@ const emit = defineEmits({
 ---
 layout: sub-two-cols
 title: その他
+level: 2
 ---
 
 <!-- prettier-ignore-end -->
