@@ -34,7 +34,7 @@ level: 2
 const msg = "Hello!";
 
 function handleClick() {
-  console.log(msg);
+  alert(msg);
 }
 </script>
 
@@ -48,6 +48,11 @@ function handleClick() {
 
 <!-- prettier-ignore-end -->
 
+<div v-if="$slidev.nav.clicks === 0">
+
+[DEMO](https://sfc.vuejs.org/#eNpNkMFOwzAMhl/F+LRJrLmXDoG48BC+dCEbHYkTxS4cqr47bjtNyym/7f/L70z4XkrzOwZssRNfh6IgQcfySuwzi0KSCxyB8DPEmJ8IX4iJzyN7HTLDd89fMXzEwf/s9jARA/QxVN2ZbW+jM3HnNq4RTWhIJfYaTAF0p1E1WxnsvPmFciR8YBKucwDTtAaZjWc2t/ms17k7EJ9xSCVXPaS+NFfJbDutiejWEMJ2y7jUbOlF23uqRVrn5OyXn7hKk+vF2a2pI+uQQhMkHU41/0moBiZcEJZkxvkfPmpuLQ==)
+
+</div>
 <div v-if="$slidev.nav.clicks === 1">
 
 `<script>` ブロックに `setup` 属性を記述します。
@@ -82,7 +87,7 @@ export default {
   setup() {
     const msg = "Hello!";
     function handleClick() {
-      console.log(msg);
+      alert(msg);
     }
     return {
       msg,
@@ -113,7 +118,7 @@ export default {
   },
   methods: {
     handleClick() {
-      console.log(this.msg);
+      alert(this.msg);
     },
   },
 };
@@ -165,6 +170,11 @@ function handleClick() {
 </template>
 ```
 
+<div v-if="$slidev.nav.clicks === 0">
+
+[DEMO](https://sfc.vuejs.org/#eNqNUttO3DAQ/ZWR+0BWbBKqogq5AfWiPvYP/JK1J4shsS3b2YKi/HvHTlgtFAEPljy343PmeGI/nKsOIzLOmiC9dhECxtHdCKMHZ32ECTx2MEPn7QCCUa9g347VP48/xxiteSpX9VMmoeZOYaQ1IYK0o4lwneCKi00udKORUdP0bWtUj796Le+LDUzCwNJeHdp+xPNz6p6FaeqFIpGjIOLg+jYiRQDNkch3mVCuBTvBFCw3AUzTSmMmOJo6sqV6Ux8R2ZYt+sqhddVdsIb2k1mJtRAE4wvPlMtSOV1uY3SB13XoZNJ/Fyrr9zXdKk+v6gErDEO58/ZvQE/Agm1PMGpKHtCXHo1Cj/4tzBet/+EmWNI4k5RTR176DH1r9rSsJCjvaPEKB52sUthpg78pCM0EBXI4y9s923A4WK1gvik2eS10XjUTVzchQxbr+BYwj73j6e4DjjahtxHqZaBeJp6bmYFDfOwRgrQOVe5dsVdyu1be7z39DFVK21vP4dPVTn65bOnj5br1tGYOF8/i0rdKj4HDpXtYC65VSps9hyv3AJ+/rvlFZ6JAb7P5H+rELoY=)
+
+</div>
 <div v-if="$slidev.nav.clicks === 1">
 
 リアクティブな状態を管理するには[Reactivity API](https://vuejs.org/api/reactivity-core.html)を使用します。
@@ -413,6 +423,11 @@ function handleClick() {
 </template>
 ```
 
+<div v-if="$slidev.nav.clicks === 0">
+
+[DEMO](https://sfc.vuejs.org/#eNqVUsFu2zAM/RVClzhYYt+9tMhQ7LDDgGEFdpl2cG26VWdLgiSnKAz/e0kpdtIULdCLLVHk4+PjG8U3a/PDgKIUO187ZQN4DIO9llr11rgAIzhsYYLWmR6koFwpvi6vP59vDJ006jBn5MVZkLFjPoDUtdE+QG8a7OCKYbPVai211O2g66CMhodKNx3eom6yQ9UNuIaRS6sOXUgR+AIreKo80SR0Lp+k3hWJO7GmS8DedlVAugHszhketrH5lRTxLwXsCaah+6mxFEUqvHOv/uMYa6bYbmkhNiIpse0rmz96o0nJyFkeH7wUZZqCY1GOkg4PIVhfFoVva9bo0efG3Rd0yt2gg+oxR99v75x58ugIWIrNGUZBwQO6rSPC6NB9hHmR+gaXYWmoiUa5WNynTZEWbJ2xnhbcYKs0/uJbFgWIAv7hLZZwG5zS9zTTtF4KsVdhqftOF5/9lWKwDSldnopJCurJi5Pi36laaTuE30QrWYsf3jjrB+dkR1dxu+wd/Bksj6ZLX0YkoS4gbzpV/7+ATNw2SYn8hHxE+MiusTEPQKacSZBPy8hgNu6RJuxjxmLfOB2FZwMPIRDNfc0Ml6TIV4pr5rgrUg7ln3t6egGz7nCT)
+
+</div>
 <div v-if="$slidev.nav.clicks === 1">
 
 Props を定義・使用するには `defineProps` というコンパイラマクロを使用します。
@@ -537,7 +552,7 @@ level: 2
 
 ::right::
 
-```vue {all|4-7|3,8-10|12-15}
+```vue {all|4-7|6|3,8-10|12-15}
 <script setup lang="ts">
 // ...
 const props = withDefaults(
@@ -557,6 +572,11 @@ const emit = defineEmits<{
 </script>
 ```
 
+<div v-if="$slidev.nav.clicks === 0">
+
+[DEMO](https://sfc.vuejs.org/#eNqFU01v2zAM/SucLnGwxr57aZehG7YdBgwbsJMujk0n7mxJkOQERer/XlKy81W0zSEWpcenR1LvIL4Yk+56FLlYutI2xoND35s7qZrOaOvhABZrGKC2ugMpCCvFp+Ppr8d7TSuFyk+INDvbZO6AB5Cq1Mp56HSFLdwybTKbzaWSqu5V6RutYFuoqsW/qKpkV7Q9zuHAqUWL1scd+Agz2BeOZBI7pw9SLbOonVRT4LEzbeGRIoDlucLdIlx+K0X4SgEroqkoPl0sRRYT1/bieziEnCFcd7xC3IjYiUVXmPTBaUWdDJrleOCkyGMVvBfakdNi671xeZa5uuQePbhU201Gq9T2yjcdpui6xdrqvUNLxFLcnHFktLlDu7AkGC3atzivoC94mZaKGqiUq8FdPwpoC7WhZnFN7z4QqbIMFuOPwzh9Y7VxNP1947dfsS761ruEJVRYNwp/8/FybFdo+D+eeg7O20ZtwkOiA3Su2OBnLvoHtq3+QKN8ouC71tX6kaIAHO6SeejaxBfTzrPCMVU/p4QoELvGk74o5xsFo5wk5PWmorHnJ2VEAQr3FyrnOex0UwUNMY1fGSP5+wqUxY4+uWjcyTiNMr3/Q72O3mH0C+v8ZEwy2oZLSV7RPJGlwVXxnxmpF1eU921T/r+inOoJ00xPzCPDG34kG8UpDMPRYUEL10Rva9JFA82DqMmso3JYBcTRsqFg2p5M23tPylcliz6CQgn0Zln2MosYwp/5WCoxPAOdsbxn)
+
+</div>
 <div v-if="$slidev.nav.clicks === 1">
 
 `defineProps`では Prop の型を定義します。
@@ -564,10 +584,15 @@ const emit = defineEmits<{
 </div>
 <div v-if="$slidev.nav.clicks === 2">
 
-デフォルト値を定義するには `defineProps`に加えて`withDefaults` を併用します。
+必須・任意は型(`?:`)で示します。
 
 </div>
 <div v-if="$slidev.nav.clicks === 3">
+
+デフォルト値を定義するには `defineProps`に加えて`withDefaults` を併用します。
+
+</div>
+<div v-if="$slidev.nav.clicks === 4">
 
 `defineEmits`では関数の型を定義します。
 
