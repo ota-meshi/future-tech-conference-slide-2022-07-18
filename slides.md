@@ -1,6 +1,6 @@
 ---
 theme: default
-background: https://source.unsplash.com/collection/94734566/1920x1080
+background: ./future02.jpeg
 class: text-center
 highlighter: shiki
 lineNumbers: false
@@ -20,7 +20,7 @@ download: true
 
 <div class="event-name-wrapper">
   <div class="event-name">
-    <a href="TODO" target="_blank" rel="noopener" data-v-2ed2a5a1="">Future Tech Conference 2022 - Jul 18th</a>
+    <a href="https://future-architect.github.io/articles/20220118a/" target="_blank" rel="noopener" data-v-2ed2a5a1="">FUTURE CON 2022 - Jul 18th</a>
   </div>
 </div>
 
@@ -63,8 +63,15 @@ h1 {
 }
 .event-name {
   width: fit-content;
-  background-color: #fff5;
+  background-color: #fffd;
   padding: 16px;
+  font-weight: 700;
+}
+.event-name:hover {
+  width: fit-content;
+  background-color: #fff;
+  padding: 16px;
+  font-weight: 700;
 }
 </style>
 

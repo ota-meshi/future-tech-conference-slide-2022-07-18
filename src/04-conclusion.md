@@ -15,7 +15,8 @@ hideInToc: true
 
 ## まとめ
 
-- Vue3.2 で &lt;script setup&gt; が導入されました
+- Vue3.2 で &lt;script setup&gt; が導入されました  
+  （Vue2.7 にも導入されました）
 - Vue3.3 では Reactivity Transform が導入される予定です
 
 <br>
@@ -40,13 +41,3 @@ hideInToc: true
 ## Vue3.3 が楽しみですね 🤩
 
 <!-- prettier-ignore-start -->
-
----
-layout: center
-class: text-center
-hideInToc: true
----
-
-<!-- prettier-ignore-end -->
-
-## Vue3.3 が楽しみですね 🤩

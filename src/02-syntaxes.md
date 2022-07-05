@@ -22,7 +22,8 @@ level: 2
 ::left::
 
 - &lt;script setup&gt; と記述します
-- トップレベルの変数はテンプレートで直接使用できます
+- トップレベルの変数はテンプレートで直接使用できます  
+  <span style="opacity: 0.7">(Vue2では使用できません)</span>
 
 ::right::
 
