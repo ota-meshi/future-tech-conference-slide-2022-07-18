@@ -22,8 +22,7 @@ level: 2
 ::left::
 
 - &lt;script setup&gt; と記述します
-- トップレベルの変数はテンプレートで直接使用できます  
-  <span style="opacity: 0.7">(Vue2では使用できません)</span>
+- トップレベルの変数はテンプレートで直接使用できます
 
 ::right::
 
@@ -284,7 +283,8 @@ level: 2
 ::left::
 
 - カスタムディレクティブは`v`で始まる変数を使用します
-- トップレベル`await` も使用できます
+- トップレベル`await` も使用できます  
+  <span style="opacity: 0.7">(Vue2では使用できません)</span>
 
 ::right::
 

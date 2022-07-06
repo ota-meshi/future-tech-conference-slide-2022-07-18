@@ -94,13 +94,13 @@ Reactivity Transform 使用：
 <script setup>
 import { useMouse } from "@vueuse/core";
 
-const count = $ref(0);
+let count = $ref(0);
 
 function handleClick() {
   count++;
 }
 
-const { x, y } = $(useMouse());
+let { x, y } = $(useMouse());
 
 function showMousePosition() {
   console.log(x, y);

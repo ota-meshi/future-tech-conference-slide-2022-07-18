@@ -19,29 +19,33 @@ hideInToc: true
   </div>
 </div>
 
-<div>
+<div class="profile-contents">
 
-- 太田 洋介
-  - 年齢: アラフォー　 📍: 神奈川県
-- アカウント
-  - GitHub: https://github.com/ota-meshi <a class="sponsor" href="https://github.com/sponsors/ota-meshi" target="_blank" rel="noopener" >♡ Sponsor</a>
-  - npm: https://www.npmjs.com/~ota-meshi
-  - Twitter: https://twitter.com/omoteota
-  - Qiita: https://qiita.com/ota-meshi
-- 所属
-  - [フューチャー株式会社](https://www.future.co.jp/) 社員 (2015/06 - )
-  - [Vue.js](https://vuejs.org/about/team.html) eslint-plugin-vue メンテナー  
-    (eslint-plugin-vue 2018/08 - , Vue 2019/07 - )
-  - [Stylelint](https://github.com/stylelint) Owners チーム (2020/09 - )
-  - [Intlify](https://github.com/intlify) eslint-plugin-vue-i18n 担当 (2020/07 - )
-  - [Stylus](https://github.com/stylus) チーム (2022/06 - )
+### 太田 洋介
+
+- 年齢: アラフォー　 📍: 神奈川県  
+- GitHub: [@ota-meshi](https://github.com/ota-meshi) <a class="sponsor" href="https://github.com/sponsors/ota-meshi" target="_blank" rel="noopener">♡ Sponsor</a> ,
+  npm: [ota-meshi](https://www.npmjs.com/~ota-meshi),
+  Twitter: [@omoteota](https://twitter.com/omoteota),  
+  Qiita: [@ota-meshi](https://qiita.com/ota-meshi)
+- 所属:
+  - [フューチャー株式会社](https://www.future.co.jp/) 社員 <span class="since">(2015/06 - )</span>
+  - [Vue.js](https://vuejs.org/about/team.html) eslint-plugin-vue メンテナー <span class="since">(eslint-plugin-vue 2018/08 - , Vue 2019/07 - )</span>
+  - [Stylelint](https://github.com/stylelint) Owners チーム <span class="since">(2020/09 - )</span>
+  - [Intlify](https://github.com/intlify) eslint-plugin-vue-i18n 担当 <span class="since">(2020/07 - )</span>
+  - [Stylus](https://github.com/stylus) チーム <span class="since">(2022/06 - )</span>
+- [WEB+DB PRESS Vol.120] 「最新Vue.js 3入門」 共同執筆 <span class="since">(2020/12/24)</span>
+- [Google Open Source Peer Bonus 2022] 受賞
+
+[WEB+DB PRESS Vol.120]: https://gihyo.jp/magazine/wdpress/archive/2021/vol120
+[Google Open Source Peer Bonus 2022]: https://www.googblogs.com/announcing-first-group-of-google-open-source-peer-bonus-winners-in-2022/
 
 </div>
 </div>
 
 <style>
 .profile {
-  grid-template-columns: 0.7fr 1.3fr;
+  grid-template-columns: 0.5fr 1.3fr;
 }
 .avatars {
   display: flex;
@@ -55,9 +59,9 @@ hideInToc: true
   height: 200px;
 }
 .org-avatars {
-  padding: 32px;
+  padding: 32px 16px;
   display: flex;
-  width: calc(80px * 3 + 8px * 2 + 16px);
+  width: calc(60px * 3 + 8px * 2 + 16px);
   box-sizing: content-box;
   gap: 8px;
   flex-wrap: wrap;
@@ -68,10 +72,13 @@ hideInToc: true
   border-radius: 16px;
   border: 0.5px solid #aaa;
   overflow: hidden;
-  width: 80px;
-  height: 80px;
+  width: 60px;
+  height: 60px;
   box-sizing: border-box;
   background: #fff;
+}
+.profile-contents .since {
+  font-size: 0.8rem;
 }
 .sponsor {
   margin-left: 8px;
