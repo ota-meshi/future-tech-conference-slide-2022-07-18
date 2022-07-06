@@ -69,7 +69,7 @@ Ref オブジェクトの`.value`を消し去れます。
 
 ```vue
 <script setup>
-import { ref, toRefs } from "vue";
+import { ref, toRefs, computed } from "vue";
 import { useMouse } from "@vueuse/core";
 
 const count = ref(0);
@@ -100,9 +100,11 @@ function handleClick() {
 
 let { x, y } = $(useMouse());
 
-const mousePosition = computed(() => `x: ${x}, y: ${y}`);
+const mousePosition = $computed(() => `x: ${x}, y: ${y}`);
 </script>
 ```
+
+[DEMO](https://sfc.vuejs.org/#eNqFks9uwjAMxl/FinYoGjSTdmNlYtp50h4gByA1EGj+KEkZqOq7z21gKhNsl8pxPv/8OW7D3pzLDzWyKSuC9MpFCBhr9yqM0s76CA3UAT8sfaCFtbcaBJtTBSW4tB4FexFGmAojSFubCDN48LjOnkZ9fl0bGZU1sF2assL3Ssl9NoJGGEj6x0fStRdEA8cxnKgTUbJL42yUWNKaEEF3qU8bVI8lnbTa1RHLjLizV1gcp/DQHFvidMGpXXTVBU/j0WB0iKhdtYxIJ4CiVIc+oHBVx0jUuex8zgQbuBbsLAJomvOsLRnv63gqPCt61xeL005+bTqVFTw1LviPHTZm6dkneunyXbCGFtO/lThfBMEImNoIRnvozuQzRhemnIe17Na5C7n1G05R7smn0phj0JOVt18BPYEFGw8YnJIH9BOPpkSP/i/mL+l97vVPMgTWxu03Oa2NDzVcEfGY65uQsF16LP/DJNVNECkmJWp1D3G555Va8cPzkNEhaGEta78BftUW3w==)
 
 <!-- prettier-ignore-start -->
 
