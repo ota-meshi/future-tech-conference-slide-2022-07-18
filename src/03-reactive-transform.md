@@ -80,9 +80,7 @@ function handleClick() {
 
 const { x, y } = toRefs(useMouse());
 
-function showMousePosition() {
-  console.log(x.value, y.value);
-}
+const mousePosition = computed(() => `x: ${x.value}, y: ${y.value}`);
 </script>
 ```
 
@@ -102,9 +100,7 @@ function handleClick() {
 
 let { x, y } = $(useMouse());
 
-function showMousePosition() {
-  console.log(x, y);
-}
+const mousePosition = computed(() => `x: ${x}, y: ${y}`);
 </script>
 ```
 
