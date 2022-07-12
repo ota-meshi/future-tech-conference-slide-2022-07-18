@@ -20,7 +20,7 @@ download: true
 
 <div class="event-name-wrapper">
   <div class="event-name">
-    <a href="https://future-architect.github.io/articles/20220118a/" target="_blank" rel="noopener" data-v-2ed2a5a1="">FUTURE CON 2022 - Jul 18th</a>
+    <a href="https://future.connpass.com/event/254304/" target="_blank" rel="noopener">FUTURE CON 2022 - Jul 18th</a>
   </div>
 </div>
 
